@@ -1,0 +1,28 @@
+<h1>Requests from server🐌</h1>
+<div class="json">
+  <h3>Json</h3>
+  <!-- table -->
+  <table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody id="table1"></tbody>
+
+    <tr *ngFor="let i of persons[0]; let j = index">
+      <td *ngIf="j < 10">{{ i.id }}</td>
+      <td *ngIf="j < 10">{{ i.first_name }}</td>
+      <td *ngIf="j < 10">{{ i.last_name }}</td>
+      <td *ngIf="j < 10">{{ i.email }}</td>
+    </tr>
+  </table>
+</div>
+<div class="txt" #text>
+  <h3>Html</h3>
+  
+</div>
+<div class="html"></div>
